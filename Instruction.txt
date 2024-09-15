@@ -1,0 +1,31 @@
+Create Terraform files 
+Choose provider 
+create Iam user and give permissions
+
+Put access key and secret access key
+terraform init 
+.git ignore 
+aws configure 
+insure of s security 
+insure of keys 
+insure of images id 
+insure required machines 
+
+terraform plan 
+insure of resources
+terraform apply 
+
+insure of state file 
+create backend.tf 
+delete offline tfstate
+create new file in s3 and put name in backend 
+create lock-file for to lock state using dynamoDB and put it in DynamoDB
+    LockID:string 
+    put name in backend 
+
+Try to use state file to mange  resources which moved to other developers
+Try to use terraform graph 
+Try to use workspace and variables file 
+Try to use output to identify the 
+
+

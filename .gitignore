@@ -1,0 +1,4 @@
+.terraform*
+project.pem
+project_accessKeys*
+.sectrets*
