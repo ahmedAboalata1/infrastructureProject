@@ -27,5 +27,8 @@ Try to use state file to mange  resources which moved to other developers
 Try to use terraform graph 
 Try to use workspace and variables file 
 Try to use output to identify the 
+Try to use modules 
 
+Ansible 
+install ansible 
 

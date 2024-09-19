@@ -13,8 +13,7 @@ resource "aws_autoscaling_group" "app" {
   max_size             = 2
   min_size             = 2
   vpc_zone_identifier  = [aws_subnet.private[0].id, aws_subnet.private[1].id]
-  launch_configuration = aws_launch_configuration.app.id
-
+  launch_configuration  = aws_launch_configuration.app.id
 }
 
 data "aws_instances" "asg_instances" {
@@ -22,8 +21,4 @@ data "aws_instances" "asg_instances" {
     name   = "tag:Name"
     values = ["app-instance"]
   }
-}
-
-output "instance_private_ips" {
-  value = data.aws_instances.asg_instances.private_ips
 }

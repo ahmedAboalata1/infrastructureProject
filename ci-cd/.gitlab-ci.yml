@@ -1,0 +1,13 @@
+stages:
+- terraform
+- ansible
+
+terraform:
+  stage: terraform
+  script:
+  - terraform init
+  - terraform apply -auto-approve
+ansible:
+  stage: ansible
+  script:
+  - ansible-playbook -i inventory playbook.yml
